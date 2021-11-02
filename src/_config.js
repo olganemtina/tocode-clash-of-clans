@@ -11,4 +11,4 @@ export const links = [
     }
 ];
 
-export const title = "logo"
+export const title = "Clash of clans"
