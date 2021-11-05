@@ -78,6 +78,10 @@ section,
   }
 }
 
+footer{
+  margin: auto;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -125,3 +129,4 @@ section,
 
 @import './common/_common';
 @import './helpers/_helpers';
+@import './theme';

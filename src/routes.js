@@ -1,6 +1,7 @@
 import HomePage from './pages/home'
 import AboutPage from './pages/about'
 import NotFoundPage from './pages/notFound'
+import ItemPage from './pages/_itemAlias'
 import { createRouter, createWebHashHistory } from 'vue-router'; 'vue-router'
 
 const routeHistory = createWebHashHistory();
@@ -19,7 +20,13 @@ const routes = createRouter({
       name: "about"
     },
     {
-      path: "/:CatchAll(.*)",
+      path: '/:itemAlias',
+      name: 'itemAlias',
+      component: ItemPage
+    },
+    {
+      //path: "/:CatchAll(.*)",
+      path: "/404",
       component: NotFoundPage,
       name: "404"
     }
